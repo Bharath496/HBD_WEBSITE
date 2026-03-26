@@ -1,0 +1,20 @@
+/*
+  Cache-Control: no-store, max-age=0, must-revalidate
+
+/styles.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/script.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/story-data.json
+  Cache-Control: public, max-age=0, must-revalidate
+
+/api/share
+  Cache-Control: no-store, max-age=0, must-revalidate
+
+/api/share/*
+  Cache-Control: no-store, max-age=0, must-revalidate
+
+/api/media
+  Cache-Control: no-store, max-age=0, must-revalidate

@@ -1,0 +1,524 @@
+[18220:6848:0322/155603.124:WARNING:chrome\browser\extensions\activity_log\activity_log_policy.cc:71] Scheduling init
+[18220:6848:0322/155603.124:WARNING:chrome\browser\extensions\activity_log\activity_log_policy.cc:71] Scheduling init
+[18220:15016:0322/155603.586:INFO:chrome\common\importer\edge_chrome_importer_utils_win.cc:34] Google chrome user data path not found.
+[18220:6848:0322/155604.105:WARNING:chrome\browser\edge_pinned_sites\pinned_sites_cache.cc:237] Cache isn't initialized
+[18220:6848:0322/155604.134:ERROR:chrome\browser\task_manager\providers\fallback_task_provider.cc:126] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/40528867.
+[18220:6848:0322/155604.406:WARNING:chrome\browser\edge_pinned_sites\pinned_sites_cache.cc:237] Cache isn't initialized
+[18220:6848:0322/155604.505:WARNING:chrome\browser\edge_pinned_sites\pinned_sites_cache.cc:237] Cache isn't initialized
+[18220:6848:0322/155604.528:WARNING:chrome\browser\edge_pinned_sites\pinned_sites_cache.cc:237] Cache isn't initialized
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1b0c12">
+  <meta name="description" content="A cinematic, no-cost birthday page that feels like a keepsake.">
+  <title>Happy Birthday, BR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="rosewood" class="story-mode">
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="ambient ambient-three" aria-hidden="true"></div>
+  <div class="heart-layer" aria-hidden="true">
+    <span class="bg-heart heart-one">?</span>
+    <span class="bg-heart heart-two">?</span>
+    <span class="bg-heart heart-three">?</span>
+    <span class="bg-heart heart-four">?</span>
+    <span class="bg-heart heart-five">?</span>
+  </div>
+  <div class="float-layer" id="floatLayer" aria-hidden="true"><span class="float-symbol" style="left: 71.4974%; top: 92.6444%; font-size: 1.28rem; animation-duration: 25.023s; animation-delay: 7.45002s; --dx: 11.1px;">?</span><span class="float-symbol" style="left: 22.4878%; top: 95.5441%; font-size: 0.88rem; animation-duration: 25.4803s; animation-delay: 0.317029s; --dx: 48.7px;">?</span><span class="float-symbol" style="left: 17.8659%; top: 96.2891%; font-size: 0.88rem; animation-duration: 17s; animation-delay: 4.52898s; --dx: 0.5px;">?</span><span class="float-symbol" style="left: 12.3508%; top: 104.467%; font-size: 1.06rem; animation-duration: 27.1027s; animation-delay: 2.6993s; --dx: 82.7px;">?</span><span class="float-symbol" style="left: 60.7181%; top: 98.0563%; font-size: 0.88rem; animation-duration: 26.5109s; animation-delay: 2.41283s; --dx: 95.3px;">*</span><span class="float-symbol" style="left: 86.978%; top: 101.596%; font-size: 1.28rem; animation-duration: 17.3818s; animation-delay: 2.40961s; --dx: 73.1px;">•</span><span class="float-symbol" style="left: 48.2474%; top: 104.402%; font-size: 1.06rem; animation-duration: 26.7902s; animation-delay: 5.75966s; --dx: -31.9px;">?</span><span class="float-symbol" style="left: 83.6149%; top: 100.278%; font-size: 0.88rem; animation-duration: 17.7005s; animation-delay: 0.530823s; --dx: 91.1px;">?</span><span class="float-symbol" style="left: 71.8207%; top: 102.718%; font-size: 0.88rem; animation-duration: 17.5891s; animation-delay: 3.99524s; --dx: -33.9px;">?</span><span class="float-symbol" style="left: 67.6369%; top: 104.846%; font-size: 1.06rem; animation-duration: 22.8897s; animation-delay: 3.62362s; --dx: -92.6px;">?</span><span class="float-symbol" style="left: 92.7332%; top: 103.96%; font-size: 1.28rem; animation-duration: 24.0687s; animation-delay: 7.86407s; --dx: -42.2px;">*</span><span class="float-symbol" style="left: 30.3911%; top: 99.7626%; font-size: 0.88rem; animation-duration: 16.3741s; animation-delay: 8.66741s; --dx: 15.7px;">•</span><span class="float-symbol" style="left: 34.8074%; top: 100.387%; font-size: 1.06rem; animation-duration: 21.5136s; animation-delay: 6.37851s; --dx: -3.3px;">?</span><span class="float-symbol" style="left: 42.1614%; top: 104.17%; font-size: 0.88rem; animation-duration: 19.2599s; animation-delay: 6.94841s; --dx: -23.3px;">?</span><span class="float-symbol" style="left: 4.14667%; top: 102.335%; font-size: 0.88rem; animation-duration: 20.1496s; animation-delay: 7.13038s; --dx: -53.8px;">?</span><span class="float-symbol" style="left: 81.4263%; top: 100.898%; font-size: 1.28rem; animation-duration: 27.2823s; animation-delay: 0.878963s; --dx: -11.6px;">?</span><span class="float-symbol" style="left: 74.8759%; top: 94.1707%; font-size: 0.88rem; animation-duration: 27.0707s; animation-delay: 2.50379s; --dx: -4.7px;">*</span><span class="float-symbol" style="left: 65.4512%; top: 86.2736%; font-size: 0.88rem; animation-duration: 20.4185s; animation-delay: 5.54279s; --dx: -78.8px;">•</span></div>
+
+  <header class="shell">
+    <a class="brand" href="#cover" aria-label="Go to the beginning">
+      <span class="brand-mark">?</span>
+      <span>For Youuu</span>
+    </a>
+
+    <nav class="nav" aria-label="Story pages">
+      <a href="#cover" aria-current="page">Cover</a>
+      <a href="#memories">Memories</a>
+      <a href="#words">Words</a>
+      <a href="#finale">Finale</a>
+    </nav>
+
+    <button class="button button-ghost shell-button" id="openCustomizer" type="button" aria-expanded="false" aria-controls="customizePanel">
+      Personalize
+    </button>
+  </header>
+
+  <div class="story-ui" aria-label="Story navigation">
+    <button class="button button-ghost story-nav" id="prevStory" type="button" disabled="">
+      Back
+    </button>
+
+    <div class="story-meta">
+      <p class="story-counter" id="storyCounter">1 / 8</p>
+      <div class="story-dots" id="storyDots" aria-label="Story progress">
+        <button class="story-dot active" type="button" data-story-index="0" aria-label="Go to cover"></button>
+      
+        <button class="story-dot" type="button" data-story-index="1" aria-label="Go to noticing"></button>
+      
+        <button class="story-dot" type="button" data-story-index="2" aria-label="Go to memories"></button>
+      
+        <button class="story-dot" type="button" data-story-index="3" aria-label="Go to gallery"></button>
+      
+        <button class="story-dot" type="button" data-story-index="4" aria-label="Go to words"></button>
+      
+        <button class="story-dot" type="button" data-story-index="5" aria-label="Go to letter"></button>
+      
+        <button class="story-dot" type="button" data-story-index="6" aria-label="Go to publish"></button>
+      
+        <button class="story-dot" type="button" data-story-index="7" aria-label="Go to finale"></button>
+      </div>
+    </div>
+
+    <button class="button button-primary story-nav" id="nextStory" type="button">
+      Next
+    </button>
+  </div>
+
+  <main class="page" id="top">
+    <section class="cover story-page active" id="cover">
+      <div class="cover-copy">
+        <p class="eyebrow">A birthday page built like a little film</p>
+        <p class="opening-line" data-opening="">Always on your side</p>
+        <h1>Happy Birthday, <span data-name="">BR</span>.</h1>
+        <p class="lede">
+          Warm, cinematic, and made to feel like something worth keeping.
+        </p>
+
+        <div class="cta-row">
+          <button class="button button-primary" type="button" data-next="#noticing">
+            Start the story
+          </button>
+          <button class="button button-secondary" id="audioToggle" type="button" hidden="" aria-pressed="false">Play soundtrack</button>
+          <button class="button button-ghost" id="complimentQuick" type="button">
+            Why you stand out
+          </button>
+        </div>
+
+        <div class="pill-row" aria-label="Experience highlights">
+          <span class="pill">Story mode</span>
+          <span class="pill">Phone friendly</span>
+          <span class="pill">Quietly unforgettable</span>
+        </div>
+      </div>
+
+      <aside class="portrait-card">
+        <div class="portrait-frame">
+          <img id="photoImage" alt="Birthday portrait" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2ZmODhhYSIvPjx0ZXh0IHg9IjEwMCIgeT0iMTEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjM2IiBmaWxsPSIjZmZmZmZmIj5IRVJPPC90ZXh0Pjwvc3ZnPg==">
+          <div class="photo-placeholder" id="photoPlaceholder" hidden="">
+            <div class="monogram" id="monogram">B</div>
+            <p class="photo-title">A frame for a favorite photo</p>
+            <p class="photo-note">
+              Add one public photo URL here, or use the publish script in this
+              folder to bake your own local image into the deployed site.
+            </p>
+          </div>
+        </div>
+        <p class="portrait-caption" id="photoCaption">A favorite portrait makes the opening feel instantly personal.</p>
+      </aside>
+    </section>
+
+    <section class="scene story-page" id="noticing">
+      <div class="section-heading">
+        <p class="eyebrow">Scene one</p>
+        <h2>The kind of details that stay with you.</h2>
+        <p class="section-copy">
+          Not loud. Not forced. Just the little things people only notice when
+          someone genuinely matters to them.
+        </p>
+      </div>
+
+      <div class="noticing-grid" id="noticingGrid">
+        <article class="noticing-card reveal-item" style="transition-delay: 0ms">
+          <p class="noticing-index">01</p>
+          <h3 class="noticing-title">Calm presence</h3>
+          <p class="noticing-body">You bring ease into a space without announcing it. People just feel it.</p>
+        </article>
+      
+        <article class="noticing-card reveal-item" style="transition-delay: 60ms">
+          <p class="noticing-index">02</p>
+          <h3 class="noticing-title">Real warmth</h3>
+          <p class="noticing-body">You have a way of making conversations feel safe, easy, and a little brighter.</p>
+        </article>
+      
+        <article class="noticing-card reveal-item" style="transition-delay: 120ms">
+          <p class="noticing-index">03</p>
+          <h3 class="noticing-title">Quiet wit</h3>
+          <p class="noticing-body">The best lines are rarely loud. They arrive softly and still win the whole moment.</p>
+        </article>
+      
+        <article class="noticing-card reveal-item" style="transition-delay: 180ms">
+          <p class="noticing-index">04</p>
+          <h3 class="noticing-title">Effortless care</h3>
+          <p class="noticing-body">You notice people in a way that makes them feel more like themselves.</p>
+        </article>
+      </div>
+
+      <div class="section-actions">
+        <button class="button button-primary" type="button" data-next="#memories">
+          Keep going
+        </button>
+      </div>
+    </section>
+
+    <section class="scene story-page" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow">Scene two</p>
+        <h2>Soft moments, edited like memory.</h2>
+        <p class="section-copy">
+          A few scenes written with warmth, so the page feels personal even
+          before the final details are filled in.
+        </p>
+      </div>
+
+      <div class="scene-layout">
+        <aside class="scene-frame-card reveal-item">
+          <div class="scene-frame">
+            <img class="scene-frame-image" id="sceneTwoImage" alt="Scene two image" hidden="">
+            <div class="scene-frame-placeholder" id="sceneTwoPlaceholder">
+              <p class="scene-frame-kicker">Page three frame</p>
+              <h3>Give this memory page its own image.</h3>
+              <p>
+                Add one photo for scene two so the story feels designed page by
+                page, not like one shared gallery.
+              </p>
+            </div>
+          </div>
+          <p class="scene-frame-note" id="sceneTwoCaption">A single image here makes the memory page feel intentional.</p>
+        </aside>
+
+        <div class="memory-stack" id="memoryGrid">
+        <article class="memory-card reveal-item" style="transition-delay: 0ms">
+          <p class="memory-index">01</p>
+          <h3 class="memory-title">The easy conversations</h3>
+          <p class="memory-body">The kind that start casually and then become the part of the day you remember the most.</p>
+        </article>
+      
+        <article class="memory-card reveal-item" style="transition-delay: 80ms">
+          <p class="memory-index">02</p>
+          <h3 class="memory-title">The low-key funny moments</h3>
+          <p class="memory-body">Not the loud kind. The clever kind that sneaks up on you and keeps the whole mood light.</p>
+        </article>
+      
+        <article class="memory-card reveal-item" style="transition-delay: 160ms">
+          <p class="memory-index">03</p>
+          <h3 class="memory-title">The ordinary plans that felt better than expected</h3>
+          <p class="memory-body">The best memories do not always arrive with warning. Sometimes they just happen because the company is right.</p>
+        </article>
+      
+        <article class="memory-card reveal-item" style="transition-delay: 240ms">
+          <p class="memory-index">04</p>
+          <h3 class="memory-title">The feeling that stays afterward</h3>
+          <p class="memory-body">When the moment ends, but the warmth of it lingers longer than it probably should.</p>
+        </article>
+      </div>
+      </div>
+
+      <div class="section-actions">
+        <button class="button button-primary" type="button" data-next="#gallery">
+          See the frames
+        </button>
+      </div>
+    </section>
+
+    <section class="scene story-page" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">Scene three</p>
+        <h2>Frames that make it feel real.</h2>
+        <p class="section-copy">
+          This one is your cinematic pause. Give scene three its own frame so
+          it feels like a distinct chapter, not part of a shared collage.
+        </p>
+      </div>
+
+      <div class="feature-frame reveal-item">
+        <div class="feature-frame-media">
+          <img class="feature-frame-image" id="sceneThreeImage" alt="Scene three image" hidden="">
+          <div class="feature-frame-placeholder" id="sceneThreePlaceholder">
+            <p class="scene-frame-kicker">Page four frame</p>
+            <h3>This page deserves its own pause-worthy image.</h3>
+            <p>
+              Choose one strong photo for this scene and let the rest of the
+              layout breathe around it.
+            </p>
+          </div>
+        </div>
+        <div class="feature-frame-copy">
+          <p class="feature-frame-index">03</p>
+          <h3 class="feature-frame-title">A frame worth stopping for.</h3>
+          <p class="feature-frame-body" id="sceneThreeCaption">One focused image gives the middle of the story a cleaner, more premium feel.</p>
+        </div>
+      </div>
+
+      <div class="section-actions">
+        <button class="button button-primary" type="button" data-next="#words">
+          What I notice
+        </button>
+      </div>
+    </section>
+
+    <section class="scene story-page" id="words">
+      <div class="section-heading">
+        <p class="eyebrow">Scene four</p>
+        <h2>What I notice about you, one line at a time.</h2>
+        <p class="section-copy">
+          This part is meant to feel quiet and personal. Take it slow and let
+          each line land.
+        </p>
+      </div>
+
+      <div class="scene-layout scene-layout-reverse">
+        <div class="compliment-stage reveal-item">
+          <div class="compliment-badge">What I notice about you</div>
+          <div class="compliment-card" aria-live="polite">
+            <p class="compliment-text is-active" id="complimentTextCurrent">You make a room feel lighter just by being fully yourself.</p>
+            <p class="compliment-text" id="complimentTextNext" aria-hidden="true"></p>
+          </div>
+
+          <div class="compliment-actions">
+            <button class="button button-primary" id="complimentBtn" type="button">
+              Show another line
+            </button>
+            <button class="button button-secondary" id="sparkButton" type="button">
+              Add some sparkle
+            </button>
+          </div>
+        </div>
+
+        <aside class="scene-frame-card reveal-item">
+          <div class="scene-frame">
+            <img class="scene-frame-image" id="sceneFourImage" alt="Scene four image" hidden="">
+            <div class="scene-frame-placeholder" id="sceneFourPlaceholder">
+              <p class="scene-frame-kicker">Page five frame</p>
+              <h3>Let the words section have its own visual mood.</h3>
+              <p>
+                This image sits beside the compliments and makes the whole page
+                feel more complete.
+              </p>
+            </div>
+          </div>
+          <p class="scene-frame-note" id="sceneFourCaption">A dedicated image here gives the compliments page a stronger mood.</p>
+        </aside>
+      </div>
+
+      <div class="section-actions">
+        <button class="button button-primary" type="button" data-next="#letter">
+          Open the note
+        </button>
+      </div>
+    </section>
+
+    <section class="scene story-page" id="letter">
+      <div class="section-heading">
+        <p class="eyebrow">Scene five</p>
+        <h2>The birthday note.</h2>
+        <p class="section-copy">
+          Gentle on purpose. Personal enough to matter, but never heavy or
+          pressuring.
+        </p>
+      </div>
+
+      <article class="letter-card">
+        <p class="letter-intro">For your year ahead</p>
+        <div class="letter-lines" id="letterLines"><p class="line">Happy birthday, BR.</p><p class="line">Test</p><p class="line">I hope this year brings softer mornings, brighter rooms, and the kind of peace that feels earned and easy.</p><p class="line">You have a way of making life feel lighter for the people around you, and that does not go unnoticed.</p><p class="line">Keep the laugh. Keep the light. Keep being fully yourself.</p></div>
+        <footer class="signature">
+          <span class="signature-rule" aria-hidden="true"></span>
+          <span class="signature-text">With care, <span data-from="">BR</span></span>
+        </footer>
+      </article>
+
+      <div class="section-actions">
+        <button class="button button-primary" type="button" data-next="#finale">
+          One last thing
+        </button>
+      </div>
+    </section>
+
+    <section class="scene story-page" id="publish">
+      <div class="section-heading">
+        <p class="eyebrow">Scene six</p>
+        <h2>How to include your own local images.</h2>
+        <p class="section-copy">
+          Local images can now travel in the copied share link. If you want a
+          cleaner permanent URL with the files baked into the site, use the
+          self-serve publish script in this project.
+        </p>
+      </div>
+
+      <article class="letter-card publish-card">
+        <div class="publish-steps">
+          <p class="line">1. Choose local images in the panel if you want them to travel inside the copied share link.</p>
+          <p class="line">2. Use <code>publish-story.ps1</code> when you want a shorter permanent Pages URL with those files baked in.</p>
+          <p class="line">3. The script copies the hero, page 3, page 4, and page 5 images into <code>story-assets/</code>.</p>
+          <p class="line">4. It updates <code>story-data.json</code> and deploys the site to the same Cloudflare Pages URL.</p>
+        </div>
+      </article>
+
+      <div class="section-actions">
+        <button class="button button-primary" type="button" data-next="#finale">
+          Finish the story
+        </button>
+      </div>
+    </section>
+
+    <section class="scene story-page finale" id="finale">
+      <div class="section-heading">
+        <p class="eyebrow">Final scene</p>
+        <h2>End it with a little light.</h2>
+        <p class="section-copy">
+          The finish should feel memorable, not loud. Just one warm final moment.
+        </p>
+      </div>
+
+      <div class="finale-card" id="finaleCard">
+        <p class="finale-lead" id="finaleLead">I hope this year meets BR with the same warmth BR gives so easily to everyone around them.</p>
+
+        <div class="finale-actions">
+          <button class="button button-primary" id="celebrateButton" type="button">
+            Light up the sky
+          </button>
+          <button class="button button-ghost" id="copyLink" type="button">
+            Copy share link
+          </button>
+        </div>
+
+        <p class="finale-message" id="finaleMessage" aria-live="polite">
+          Stay exactly the way you are. That is already rare.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <audio id="audioPlayer" preload="none"></audio>
+
+  <button class="customize-launcher" id="customizeToggle" type="button" aria-expanded="false" aria-controls="customizePanel">
+    Personalize
+  </button>
+
+  <aside class="customize-panel" id="customizePanel" aria-hidden="true">
+    <div class="customize-sheet">
+      <div class="customize-head">
+        <div>
+          <p class="eyebrow">Personalize the page</p>
+          <h2>Keep it warm. Keep it polished.</h2>
+        </div>
+        <button class="icon-button" id="closeCustomizer" type="button" aria-label="Close personalize panel">
+          ×
+        </button>
+      </div>
+
+      <p class="helper-text">
+        Public image and audio URLs travel well when you copy the link. Local
+        images chosen from your device now attach to the current shareable link
+        too.
+        Local audio still needs a public URL or
+        <strong>publish-story.ps1 -Deploy</strong> if you want the receiver to
+        hear it.
+      </p>
+
+      <label class="field">
+        <span>Her name</span>
+        <input id="nameInput" type="text" placeholder="Anju" autocomplete="off">
+      </label>
+
+      <label class="field">
+        <span>Your name</span>
+        <input id="fromInput" type="text" placeholder="BR" autocomplete="off">
+      </label>
+
+      <label class="field">
+        <span>Hero opening</span>
+        <textarea id="openingInput" rows="3" placeholder="This is not just a birthday page. It is a small world built to celebrate you."></textarea>
+      </label>
+
+      <label class="field">
+        <span>Photo URL (optional)</span>
+        <input id="photoInput" type="url" placeholder="https://..." autocomplete="off">
+      </label>
+
+      <label class="field">
+        <span>Or choose photo from your device</span>
+        <input id="photoFileInput" class="file-input" type="file" accept="image/*">
+        <small class="field-note" id="photoFileStatus">This image will preview now and travel in the copied share link.</small>
+      </label>
+
+      <label class="field">
+        <span>Soundtrack URL (MP3, optional)</span>
+        <input id="audioInput" type="url" placeholder="https://..." autocomplete="off">
+      </label>
+
+      <label class="field">
+        <span>Or choose soundtrack from your device</span>
+        <input id="audioFileInput" class="file-input" type="file" accept="audio/*">
+        <small class="field-note" id="audioFileStatus">Local audio previews here first. Deploy to make it available on the live site.</small>
+      </label>
+
+      <label class="field">
+        <span>Page 3 image URL (memories)</span>
+        <input id="sceneTwoInput" type="url" placeholder="https://..." autocomplete="off">
+      </label>
+
+      <label class="field">
+        <span>Or choose page 3 image from your device</span>
+        <input id="sceneTwoFileInput" class="file-input" type="file" accept="image/*">
+        <small class="field-note" id="sceneTwoFileStatus">Page 3 previews here first and will travel in the copied share link.</small>
+      </label>
+
+      <label class="field">
+        <span>Page 4 image URL (frames)</span>
+        <input id="sceneThreeInput" type="url" placeholder="https://..." autocomplete="off">
+      </label>
+
+      <label class="field">
+        <span>Or choose page 4 image from your device</span>
+        <input id="sceneThreeFileInput" class="file-input" type="file" accept="image/*">
+        <small class="field-note" id="sceneThreeFileStatus">Page 4 previews here first and will travel in the copied share link.</small>
+      </label>
+
+      <label class="field">
+        <span>Page 5 image URL (words)</span>
+        <input id="sceneFourInput" type="url" placeholder="https://..." autocomplete="off">
+      </label>
+
+      <label class="field">
+        <span>Or choose page 5 image from your device</span>
+        <input id="sceneFourFileInput" class="file-input" type="file" accept="image/*">
+        <small class="field-note" id="sceneFourFileStatus">Page 5 previews here first and will travel in the copied share link.</small>
+      </label>
+
+      <label class="field">
+        <span>Birthday note</span>
+        <textarea id="noteInput" rows="4" placeholder="I hope this year feels gentle, bright, and deeply yours."></textarea>
+      </label>
+
+      <div class="theme-group" role="group" aria-label="Theme options">
+        <button class="theme-chip" type="button" data-theme-choice="moonlit" aria-pressed="false">Moonlit</button>
+        <button class="theme-chip" type="button" data-theme-choice="blush" aria-pressed="false">Blush</button>
+        <button class="theme-chip" type="button" data-theme-choice="daybreak" aria-pressed="false">Daybreak</button>
+        <button class="theme-chip" type="button" data-theme-choice="starlit" aria-pressed="false">Starlit</button>
+        <button class="theme-chip active" type="button" data-theme-choice="rosewood" aria-pressed="true">Rosewood</button>
+        <button class="theme-chip" type="button" data-theme-choice="meadow" aria-pressed="false">Meadow</button>
+      </div>
+
+      <div class="customize-actions">
+        <button class="button button-secondary" id="resetPage" type="button">
+          Reset
+        </button>
+        <button class="button button-primary" id="copyLinkSecondary" type="button">
+          Copy share link
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <div id="confettiLayer" aria-hidden="true"></div>
+
+  <script src="script.js" defer=""></script>
+
+
+</body></html>

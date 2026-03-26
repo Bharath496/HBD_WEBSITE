@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0c1220" />
+  <meta
+    name="description"
+    content="A cinematic, no-cost birthday page that feels like a keepsake."
+  />
+  <title>For Youuu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="styleshee " href="styles.css" />
+</head>
+<body data-theme="moonlit" class="story-mode">
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="ambient ambient-three" aria-hidden="true"></div>
+  <div class="heart-layer" aria-hidden="true">
+    <span class="bg-heart heart-one">&#10084;</span>
+    <span class="bg-heart heart-two">&#10084;</span>
+    <span class="bg-heart heart-three">&#10084;</span>
+    <span class="bg-heart heart-four">&#10084;</span>
+    <span class="bg-heart heart-five">&#10084;</span>
+  </div>
+  <div class="float-layer" id="floatLayer" aria-hidden="true"></div>
+
+  <header class="shell">
+    <a class="brand" href="#cover" aria-label="Go to the beginning">
+      <span class="brand-mark">&#10022;</span>
+      <span>For Youuu</span>
+    </a>
+
+    <nav class="nav" aria-label="Story pages">
+      <a href="#cover">Cover</a>
+      <a href="#memories">Memories</a>
+      <a href="#words">Words</a>
+      <a href="#finale">Finale</a>
+    </nav>
+
+    <button
+      class="button button-ghost shell-button"
+      id="openCustomizer"
+      type="button"
+      aria-expanded="false"
+      aria-controls="customizePanel"
+    >
+      Personalize
+    </button>
+  </header>
+
+  <div class="story-ui" aria-label="Story navigation">
+    <button class="button button-ghost story-nav" id="prevStory" type="button">
+      Back
+    </button>
+
+    <div class="story-meta">
+      <p class="story-counter" id="storyCounter">1 / 8</p>
+      <div class="story-dots" id="storyDots" aria-label="Story progress"></div>
+    </div>
+
+    <button class="button button-primary story-nav" id="nextStory" type="button">
+      Next
+    </button>
+  </div>
+
+  <main class="page" id="top">
+    <section class="cover story-page active" id="cover">
+      <div class="cover-copy">
+        <p class="eyebrow">A birthday page built like a little film</p>
+        <p class="opening-line" data-opening>
+          This is not just a birthday page. It is a small world built to
+          celebrate you.
+        </p>
+        <h1>Happy Birthday, <span data-name>beautiful one</span>.</h1>
+        <p class="lede">
+          Warm, cinematic, and made to feel like something worth keeping.
+        </p>
+
+        <div class="cta-row">
+          <button class="button button-primary" type="button" data-next="#noticing">
+            Start the story
+          </button>
+          <button class="button button-secondary" id="audioToggle" type="button" hidden>
+            Play soundtrack
+          </button>
+          <button class="button button-ghost" id="complimentQuick" type="button">
+            Why you stand out
+          </button>
+        </div>
+
+        <div class="pill-row" aria-label="Experience highlights">
+          <span class="pill">Story mode</span>
+          <span class="pill">Phone friendly</span>
+          <span class="pill">Quietly unforgettable</span>
+        </div>
+      </div>
+
+      <aside class="portrait-card">
+        <div class="portrait-frame">
+          <img id="photoImage" alt="Birthday portrait" hidden />
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <div class="monogram" id="monogram">B</div>
+            <p class="photo-title">A frame for a favorite photo</p>
+            <p class="photo-note">
+              Add one public photo URL here, or use the publish script in this
+              folder to bake your own local image into the deployed site.
+            </p>
+          </div>
+        </div>
+        <p class="portrait-caption" id="photoCaption">
+          A good photo turns the opening into a keepsake.
+        </p>
+      </aside>
+    </section>
+
+    <section class="scene story-page" id="noticing">
+      <div class="section-heading">
+        <p class="eyebrow">Scene one</p>
+        <h2>The kind of details that stay with you.</h2>
+        <p class="section-copy">
+          Not loud. Not forced. Just the little things people only notice when
+          someone genuinely matters to them.
+        </p>
+      </div>
+
+      <div class="noticing-grid" id="noticingGrid"></div>
+
+      <div class="section-actions">
+        <button class="button button-primary" type="button" data-next="#memories">
+          Keep going
+        </button>
+      </div>
+    </section>
+
+    <section class="scene story-page" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow">Scene two</p>
+        <h2>Soft moments, edited like memory.</h2>
+        <p class="section-copy">
+          A few scenes written with warmth, so the page feels personal even
+          before the final details are filled in.
+        </p>
+      </div>
+
+      <div class="scene-layout">
+        <aside class="scene-frame-card reveal-item">
+          <div class="scene-frame">
+            <img
+              class="scene-frame-image"
+              id="sceneTwoImage"
+              alt="Scene two image"
+              hidden
+            />
+            <div class="scene-frame-placeholder" id="sceneTwoPlaceholder">
+              <p class="scene-frame-kicker">Page three frame</p>
+              <h3>Give this memory page its own image.</h3>
+              <p>
+                Add one photo for scene two so the story feels designed page by
+                page, not like one shared gallery.
+              </p>
+            </div>
+          </div>
+          <p class="scene-frame-note" id="sceneTwoCaption">
+            A single image here makes the memory page feel intentional.
+          </p>
+        </aside>
+
+        <div class="memory-stack" id="memoryGrid"></div>
+      </div>
+
+      <div class="section-actions">
+        <button class="button button-primary" type="button" data-next="#gallery">
+          See the frames
+        </button>
+      </div>
+    </section>
+
+    <section class="scene story-page" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">Scene three</p>
+        <h2>Frames that make it feel real.</h2>
+        <p class="section-copy">
+          This one is your cinematic pause. Give scene three its own frame so
+          it feels like a distinct chapter, not part of a shared collage.
+        </p>
+      </div>
+
+      <div class="feature-frame reveal-item">
+        <div class="feature-frame-media">
+          <img
+            class="feature-frame-image"
+            id="sceneThreeImage"
+            alt="Scene three image"
+            hidden
+          />
+          <div class="feature-frame-placeholder" id="sceneThreePlaceholder">
+            <p class="scene-frame-kicker">Page four frame</p>
+            <h3>This page deserves its own pause-worthy image.</h3>
+            <p>
+              Choose one strong photo for this scene and let the rest of the
+              layout breathe around it.
+            </p>
+          </div>
+        </div>
+        <div class="feature-frame-copy">
+          <p class="feature-frame-index">03</p>
+          <h3 class="feature-frame-title">A frame worth stopping for.</h3>
+          <p class="feature-frame-body" id="sceneThreeCaption">
+            One focused image gives the middle of the story a cleaner, more
+            premium feel.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-actions">
+        <button class="button button-primary" type="button" data-next="#words">
+          What I notice
+        </button>
+      </div>
+    </section>
+
+    <section class="scene story-page" id="words">
+      <div class="section-heading">
+        <p class="eyebrow">Scene four</p>
+        <h2>What I notice about you, one line at a time.</h2>
+        <p class="section-copy">
+          This part is meant to feel quiet and personal. Take it slow and let
+          each line land.
+        </p>
+      </div>
+
+      <div class="scene-layout scene-layout-reverse">
+        <div class="compliment-stage reveal-item">
+          <div class="compliment-badge">What I notice about you</div>
+          <div class="compliment-card" aria-live="polite">
+            <p class="compliment-text is-active" id="complimentTextCurrent"></p>
+            <p class="compliment-text" id="complimentTextNext" aria-hidden="true"></p>
+          </div>
+
+          <div class="compliment-actions">
+            <button class="button button-primary" id="complimentBtn" type="button">
+              Show another line
+            </button>
+            <button class="button button-secondary" id="sparkButton" type="button">
+              Add some sparkle
+            </button>
+          </div>
+        </div>
+
+        <aside class="scene-frame-card reveal-item">
+          <div class="scene-frame">
+            <img
+              class="scene-frame-image"
+              id="sceneFourImage"
+              alt="Scene four image"
+              hidden
+            />
+            <div class="scene-frame-placeholder" id="sceneFourPlaceholder">
+              <p class="scene-frame-kicker">Page five frame</p>
+              <h3>Let the words section have its own visual mood.</h3>
+              <p>
+                This image sits beside the compliments and makes the whole page
+                feel more complete.
+              </p>
+            </div>
+          </div>
+          <p class="scene-frame-note" id="sceneFourCaption">
+            A dedicated image here gives the compliments page a stronger mood.
+          </p>
+        </aside>
+      </div>
+
+      <div class="section-actions">
+        <button class="button button-primary" type="button" data-next="#letter">
+          Open the note
+        </button>
+      </div>
+    </section>
+
+    <section class="scene story-page" id="letter">
+      <div class="section-heading">
+        <p class="eyebrow">Scene five</p>
+        <h2>A small poem for your birthday.</h2>
+        <p class="section-copy">
+          Softly romantic, still grounded in friendship, and written to feel
+          like something she would want to read twice.
+        </p>
+      </div>
+
+      <article class="letter-card poem-card">
+        <p class="letter-intro">For the heart of this page</p>
+        <div class="letter-lines poem-lines" id="letterLines"></div>
+        <footer class="signature">
+          <span class="signature-rule" aria-hidden="true"></span>
+          <span class="signature-text">With care, <span data-from>someone cheering for you</span></span>
+        </footer>
+      </article>
+
+      <div class="section-actions">
+        <button class="button button-primary" type="button" data-next="#publish">
+          Open the photo booth
+        </button>
+      </div>
+    </section>
+
+    <section class="scene story-page" id="publish">
+      <div class="section-heading">
+        <p class="eyebrow">Scene six</p>
+        <h2>A little photo booth of old memories.</h2>
+        <p class="section-copy">
+          Give the page a surprise ending with older photos. A few throwback
+          frames can make the whole story feel more personal and nostalgic.
+        </p>
+      </div>
+
+      <div class="booth-grid" id="boothGrid"></div>
+      <p class="booth-hint" id="boothHint">
+        Add a few old photos in the personalize panel to turn this into a
+        little memory booth.
+      </p>
+
+      <div class="section-actions">
+        <button class="button button-primary" type="button" data-next="#finale">
+          Finish the story
+        </button>
+      </div>
+    </section>
+
+    <section class="scene story-page finale" id="finale">
+      <div class="section-heading">
+        <p class="eyebrow">Final scene</p>
+        <h2>End it with a little light.</h2>
+        <p class="section-copy">
+          The finish should feel memorable, not loud. Just one warm final moment.
+        </p>
+      </div>
+
+      <div class="finale-card" id="finaleCard">
+        <p class="finale-lead" id="finaleLead">
+          I hope this year meets you with the same warmth you give so easily to
+          everyone around you.
+        </p>
+
+        <div class="finale-actions">
+          <button class="button button-primary" id="celebrateButton" type="button">
+            Light up the sky
+          </button>
+          <button class="button button-ghost" id="copyLink" type="button">
+            Copy share link
+          </button>
+        </div>
+
+        <p class="finale-message" id="finaleMessage" aria-live="polite">
+          Stay exactly the way you are. That is already rare.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <audio id="audioPlayer" preload="none"></audio>
+
+  <button
+    class="customize-launcher"
+    id="customizeToggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="customizePanel"
+  >
+    Personalize
+  </button>
+
+  <aside class="customize-panel" id="customizePanel" aria-hidden="true">
+    <div class="customize-sheet">
+      <div class="customize-head">
+        <div>
+          <p class="eyebrow">Personalize the page</p>
+          <h2>Keep it warm. Keep it polished.</h2>
+        </div>
+        <button
+          class="icon-button"
+          id="closeCustomizer"
+          type="button"
+          aria-label="Close personalize panel"
+        >
+          &times;
+        </button>
+      </div>
+
+      <p class="helper-text">
+        Public image and audio URLs travel well when you copy the link. Local
+        images chosen from your device now attach to the current shareable link
+        too.
+        Local audio still needs a public URL or
+        <strong>publish-story.ps1 -Deploy</strong> if you want the receiver to
+        hear it.
+      </p>
+
+      <label class="field">
+        <span>Her name</span>
+        <input id="nameInput" type="text" placeholder="Anju" autocomplete="off" />
+      </label>
+
+      <label class="field">
+        <span>Your name</span>
+        <input id="fromInput" type="text" placeholder="BR" autocomplete="off" />
+      </label>
+
+      <label class="field">
+        <span>Hero opening</span>
+        <textarea
+          id="openingInput"
+          rows="3"
+          placeholder="This is not just a birthday page. It is a small world built to celebrate you."
+        ></textarea>
+      </label>
+
+      <label class="field">
+        <span>Photo URL (optional)</span>
+        <input id="photoInput" type="url" placeholder="https://..." autocomplete="off" />
+      </label>
+
+      <label class="field">
+        <span>Or choose photo from your device</span>
+        <input id="photoFileInput" class="file-input" type="file" accept="image/*" />
+        <small class="field-note" id="photoFileStatus">
+          This image will preview now and travel in the copied share link.
+        </small>
+      </label>
+
+      <label class="field">
+        <span>Soundtrack URL (MP3, optional)</span>
+        <input id="audioInput" type="url" placeholder="https://..." autocomplete="off" />
+      </label>
+
+      <label class="field">
+        <span>Or choose soundtrack from your device</span>
+        <input id="audioFileInput" class="file-input" type="file" accept="audio/*" />
+        <small class="field-note" id="audioFileStatus">
+          Local audio previews here first. Deploy to make it available on the live site.
+        </small>
+      </label>
+
+      <label class="field">
+        <span>Page 3 image URL (memories)</span>
+        <input id="sceneTwoInput" type="url" placeholder="https://..." autocomplete="off" />
+      </label>
+
+      <label class="field">
+        <span>Or choose page 3 image from your device</span>
+        <input id="sceneTwoFileInput" class="file-input" type="file" accept="image/*" />
+        <small class="field-note" id="sceneTwoFileStatus">
+          Page 3 previews here first and will travel in the copied share link.
+        </small>
+      </label>
+
+      <label class="field">
+        <span>Page 4 image URL (frames)</span>
+        <input id="sceneThreeInput" type="url" placeholder="https://..." autocomplete="off" />
+      </label>
+
+      <label class="field">
+        <span>Or choose page 4 image from your device</span>
+        <input id="sceneThreeFileInput" class="file-input" type="file" accept="image/*" />
+        <small class="field-note" id="sceneThreeFileStatus">
+          Page 4 previews here first and will travel in the copied share link.
+        </small>
+      </label>
+
+      <label class="field">
+        <span>Page 5 image URL (words)</span>
+        <input id="sceneFourInput" type="url" placeholder="https://..." autocomplete="off" />
+      </label>
+
+      <label class="field">
+        <span>Or choose page 5 image from your device</span>
+        <input id="sceneFourFileInput" class="file-input" type="file" accept="image/*" />
+        <small class="field-note" id="sceneFourFileStatus">
+          Page 5 previews here first and will travel in the copied share link.
+        </small>
+      </label>
+
+      <label class="field">
+        <span>Photo booth URLs (old memories)</span>
+        <textarea
+          id="boothInput"
+          rows="6"
+          placeholder="https://image-one.jpg | The day that still makes you smile&#10;https://image-two.jpg | A quiet memory worth keeping&#10;https://image-three.jpg | One more little throwback"
+        ></textarea>
+      </label>
+
+      <label class="field">
+        <span>Or choose up to 6 old memory photos</span>
+        <input id="boothFileInput" class="file-input" type="file" accept="image/*" multiple />
+        <small class="field-note" id="boothFileStatus">
+          The photo booth previews here and travels in the copied share link too.
+        </small>
+      </label>
+
+      <label class="field">
+        <span>Birthday note</span>
+        <textarea
+          id="noteInput"
+          rows="4"
+          placeholder="I hope this year feels gentle, bright, and deeply yours."
+        ></textarea>
+      </label>
+
+      <div class="theme-group" role="group" aria-label="Theme options">
+        <button class="theme-chip" type="button" data-theme-choice="moonlit">Moonlit</button>
+        <button class="theme-chip" type="button" data-theme-choice="blush">Blush</button>
+        <button class="theme-chip" type="button" data-theme-choice="daybreak">Daybreak</button>
+        <button class="theme-chip" type="button" data-theme-choice="starlit">Starlit</button>
+        <button class="theme-chip" type="button" data-theme-choice="rosewood">Rosewood</button>
+        <button class="theme-chip" type="button" data-theme-choice="meadow">Meadow</button>
+      </div>
+
+      <div class="customize-actions">
+        <button class="button button-secondary" id="resetPage" type="button">
+          Reset
+        </button>
+        <button class="button button-primary" id="copyLinkSecondary" type="button">
+          Copy share link
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <div id="confettiLayer" aria-hidden="true"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

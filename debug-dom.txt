@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debug Hash</title>
+</head>
+<body>
+  <pre id="output">{
+  "hash": "gift=eyJuYW1lIjoiQlIiLCJlbWJlZHMiOnsicGhvdG8iOiJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSFpwWlhkQ2IzZzlJakFnTUNBeU1EQWdNakF3SWo0OGNtVmpkQ0IzYVdSMGFEMGlNakF3SWlCb1pXbG5hSFE5SWpJd01DSWdabWxzYkQwaUkyWm1PRGhoWVNJdlBqeDBaWGgwSUhnOUlqRXdNQ0lnZVQwaU1URXdJaUIwWlhoMExXRnVZMmh2Y2owaWJXbGtaR3hsSWlCbWIyNTBMWE5wZW1VOUlqTTJJaUJtYVd4c1BTSWpabVptWm1abUlqNUlSVkpQUEM5MFpYaDBQand2YzNablBnPT0ifX0",
+  "payload": {
+    "name": "BR",
+    "embeds": {
+      "photo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2ZmODhhYSIvPjx0ZXh0IHg9IjEwMCIgeT0iMTEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjM2IiBmaWxsPSIjZmZmZmZmIj5IRVJPPC90ZXh0Pjwvc3ZnPg=="
+    }
+  }
+}</pre>
+  <script>
+    function decodeBase64UrlToBytes(value) {
+      const normalized = value.replace(/-/g, "+").replace(/_/g, "/");
+      const padded = normalized + "=".repeat((4 - (normalized.length % 4 || 4)) % 4);
+      const binary = atob(padded);
+      const bytes = new Uint8Array(binary.length);
+
+      for (let index = 0; index < binary.length; index += 1) {
+        bytes[index] = binary.charCodeAt(index);
+      }
+
+      return bytes;
+    }
+
+    async function decodeSharePayload(hashValue) {
+      if (!hashValue) return null;
+
+      if (hashValue.startsWith("giftz=") && "DecompressionStream" in window) {
+        const bytes = decodeBase64UrlToBytes(hashValue.slice(6));
+        const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
+        const text = await new Response(stream).text();
+        return JSON.parse(text);
+      }
+
+      if (hashValue.startsWith("gift=")) {
+        const bytes = decodeBase64UrlToBytes(hashValue.slice(5));
+        const text = new TextDecoder().decode(bytes);
+        return JSON.parse(text);
+      }
+
+      return null;
+    }
+
+    window.addEventListener("load", async () => {
+      const output = document.getElementById("output");
+      try {
+        const hash = location.hash.replace(/^#/, "");
+        const payload = await decodeSharePayload(hash);
+        output.textContent = JSON.stringify({ hash, payload }, null, 2);
+      } catch (error) {
+        output.textContent = String(error && error.stack ? error.stack : error);
+      }
+    });
+  </script>
+
+
+</body></html>
